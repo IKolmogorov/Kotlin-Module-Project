@@ -1,0 +1,52 @@
+
+// MenuType.MAIN_MENU •••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+MenuItemType                Example                         ParentMenuType
+---------------------------------------------------------------------------
+TITLE                       Список архивов
+OPEN_ARCHIVE                1. Личные заметки
+OPEN_ARCHIVE                2. Работа
+OPEN_ARCHIVE                3. Список покупок
+CREATE_ARCHIVE              4. Создать архив
+EXIT                        5. Выход
+
+
+// MenuType.CREATING_ARCHIVE_MENU ••••••••••••••••••••••••••••••••••••••••
+
+MenuItemType                Example                         ParentMenuType
+---------------------------------------------------------------------------
+TITLE                       Создание нового архива
+CREATE_ARCHIVE_CHOOSE_NAME  1. Указать имя архива           MenuType.CREATING_ARCHIVE_MENU
+EXIT                        2. Выход                        MenuType.MAIN_MENU
+
+
+// MenuType.EXISTED_ARCHIVE_MENU ••••••••••••••••••••••••••••••••••••••••••
+
+MenuItemType                Example                         ParentMenuType
+---------------------------------------------------------------------------
+TITLE                       СПИСОК ЗАМЕТОК АРХИВА "Работа"
+OPEN_NOTE                   1. Телефонная книга             MenuType.EXISTED_ARCHIVE_MENU
+OPEN_NOTE                   2. Пароли                       MenuType.EXISTED_ARCHIVE_MENU
+OPEN_NOTE                   3. Идеи                         MenuType.EXISTED_ARCHIVE_MENU
+CREATE_NOTE                 4. Создать заметку              MenuType.EXISTED_ARCHIVE_MENU
+EXIT                        5. Выход                        MenuType.MAIN_MENU
+
+// MenuType.CREATING_NOTE_MENU ••••••••••••••••••••••••••••••••••••••••
+
+MenuItemType                Example                         ParentMenuType
+---------------------------------------------------------------------------
+TITLE                       Создание новой заметки
+CREATE_NOTE_CHOOSE_NAME     1. Указать имя заметки          MenuType.CREATING_NOTE_MENU
+EXIT                        2. Выход                        MenuType.EXISTED_ARCHIVE_MENU
+
+// MenuType.EXISTED_NOTE_MENU ••••••••••••••••••••••••••••••••••••••••••
+
+MenuItemType                Example                         ParentMenuType
+---------------------------------------------------------------------------
+TITLE                       Заметка "Телефонная книга"
+OPEN_NOTE                   1. Просмотреть заметку          MenuType.EXISTED_NOTE_MENU
+EDIT_NOTE                   2. Отредактировать заметку      MenuType.EXISTED_NOTE_MENU
+EXIT                        3. Выход                        MenuType.CREATING_NOTE_MENU
+
+
+
